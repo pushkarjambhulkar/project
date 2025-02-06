@@ -54,11 +54,7 @@ function Sidebar() {
             title: "Subscriptions",
             url: "/subscriptions",
         },
-        {
-            icon: <BiLike size={25} />, // Add an appropriate icon for Disliked Videos
-            title: "Disliked Videos",
-            url: "/disliked-videos",  // Add the URL for Disliked Videos
-        },
+        
     ];
 
     const bottomBarItems = [
