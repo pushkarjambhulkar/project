@@ -12,7 +12,7 @@ import VideoDetail from "./VideoDetail";
 import SearchVideos from "./SearchVideos";
 import TermsAndConditions from "./TermsAndConditions ";
 import ChannelPlaylist from "./Channel/ChannelPlaylist";
-
+import DislikedVideos from "./Dislikedvideos";
 export {
     Channel,
     ChannelSubscribers,
@@ -23,6 +23,7 @@ export {
     History,
     HomePage,
     LikedVideos,
+    DislikedVideos,
     MySubscriptions,
     VideoDetail,
     SearchVideos,

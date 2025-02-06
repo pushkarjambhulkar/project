@@ -10,6 +10,7 @@ import {
     ChannelVideos,
     ChannelTweets,
     LikedVideos,
+    DislikedVideos,
     VideoDetail,
     ChannelSubscribers,
     MySubscriptions,
@@ -106,6 +107,14 @@ function App() {
                         element={
                             <AuthLayout authentication>
                                 <LikedVideos />
+                            </AuthLayout>
+                        }
+                    />
+                     <Route
+                        path="/disliked-videos"
+                        element={
+                            <AuthLayout authentication>
+                                <DislikedVideos />
                             </AuthLayout>
                         }
                     />

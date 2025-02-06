@@ -17,6 +17,7 @@ function Sidebar() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const username = useSelector((state) => state.auth?.userData?.username);
+
     const sidebarTopItems = [
         {
             icon: <RiHome6Line size={25} />,
@@ -27,6 +28,11 @@ function Sidebar() {
             icon: <BiLike size={25} />,
             title: "Liked Videos",
             url: "/liked-videos",
+        },
+        {
+            icon: <BiLike size={25} />, // Add an appropriate icon for Disliked Videos
+            title: "Disliked Videos",
+            url: "/disliked-videos",  // Add the URL for Disliked Videos
         },
         {
             icon: <BiHistory size={25} />,
@@ -47,6 +53,11 @@ function Sidebar() {
             icon: <TbUserCheck size={25} />,
             title: "Subscriptions",
             url: "/subscriptions",
+        },
+        {
+            icon: <BiLike size={25} />, // Add an appropriate icon for Disliked Videos
+            title: "Disliked Videos",
+            url: "/disliked-videos",  // Add the URL for Disliked Videos
         },
     ];
 
@@ -71,6 +82,7 @@ function Sidebar() {
             title: "Subscriptions",
             url: "/subscriptions",
         },
+        
     ];
 
     const logout = async () => {
@@ -123,7 +135,7 @@ function Sidebar() {
                 </div>
             </div>
 
-            {/* for mobile sidebar is bottom bar*/}
+            {/* for mobile sidebar is bottom bar */}
             <div className="border-t-2 text-white h-16 sm:hidden z-20 p-1 w-full flex justify-around fixed bottom-0 bg-[#0E0F0F]">
                 {bottomBarItems.map((item) => (
                     <NavLink
