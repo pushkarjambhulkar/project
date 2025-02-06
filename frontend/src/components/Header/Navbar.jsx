@@ -39,11 +39,7 @@ function Navbar() {
             title: "My Content",
             url: `/channel/${username}`,
         },
-        {
-            icon: <BiLike size={25} />,  // You can use a different icon here for dislikes
-            title: "Disliked Videos",
-            url: "/disliked-videos",  // Add the appropriate URL for disliked videos
-        },
+       
     ];
 
     return (
